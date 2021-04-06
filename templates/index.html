@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<H1>Welcome to my web interface</H1>
+<H2>Display Official details</H2>
+<form method = "POST" action="/fetchdata">
+    <label for = "Job">Designation:</label><br>
+    <input type = "text" name = "Designation" /><br>
+    <label for = "email">E-mail:</label><br>
+    <input type = "text" name = "email" /><br>
+    <label for = "Phone">Phone No:</label><br>
+    <input type = "text" name = "phoneNo" /><br>
+    <input type = "submit">
+</form>
+<hr>
+<H2>Add Texas Official</H2>
+<form method = "POST" action = "/insert">
+    <label for = "id">ID:</label><br>
+    <input type = "text" name = "idText" /><br>
+    <label for = "name">Name:</label><br>
+    <input type = "text" name = "nameText" /><br>
+    <label for = "design">Designation:</label><br>
+    <input type = "text" name = "jobText" /><br>
+    <label for = "emailLabel">Email:</label><br>
+    <input type = "text" name = "emailText" /><br>
+    <label for = "phoneNumber">Phone number:</label><br>
+    <input type = "text" name = "phoneText" /><br>
+    <input type = "submit">
+</form>
+</body>
+</html>
