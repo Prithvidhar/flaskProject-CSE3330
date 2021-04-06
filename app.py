@@ -46,5 +46,18 @@ def insert():
         cur.close()
         return 'success'
     return render_template('index.html')
+@app.route('/update', methods=['GET', 'POST'])
+def update():
+    if request.method == "POST":
+        details = request.form
+        oldName = details['ogNameText']
+        newName = details['newNameText']
+        cur = mysql.connection.cursor()
+        cur.execute("UPDATE officials set Elected_Officials = '" + newName +"' WHERE Elected_Officials = '" + oldName + "'")
+        mysql.connection.commit()
+        cur.close()
+        return 'success'
+    return render_template('index.html')
+
 if __name__ == '__main__':
     app.run()
