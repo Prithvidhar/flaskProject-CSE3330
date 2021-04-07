@@ -58,6 +58,17 @@ def update():
         cur.close()
         return 'success'
     return render_template('index.html')
+@app.route('/delete', methods=['GET', 'POST'])
+def delete():
+    if request.method == "POST":
+        details = request.form
+        reName = details['delOff']
+        cur = mysql.connection.cursor()
+        cur.execute("DELETE FROM officials WHERE Elected_Officials = '" + reName + "'")
+        mysql.connection.commit()
+        cur.close()
+        return 'success'
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
