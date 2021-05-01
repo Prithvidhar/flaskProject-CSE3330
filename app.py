@@ -18,12 +18,10 @@ def root():
 def display():
     if request.method == "POST":
         details = request.form
-        design = details['Designation']
-        em = details['email']
         phone = details['phoneNo']
 
         cur = mysql.connection.cursor()
-        cur.execute("SELECT * FROM officials AS O WHERE O.Designation = '" + design + "' AND O.Email = '" + em + "' AND O.Phone_No = '" + phone + "'")
+        cur.execute("SELECT * FROM officials AS O WHERE O.Phone_No = '" + phone + "'")
         result = cur.fetchall()
         print(result)
         mysql.connection.commit()
