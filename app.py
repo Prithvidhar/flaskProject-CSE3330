@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
-
+#Made by Prithvidhar Pudu and Bryan Bidjocka fpr CSE-3330-001
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
