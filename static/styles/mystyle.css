@@ -3,6 +3,10 @@ h1{
     color: aliceblue;
 }
 body {
-    background-image: url("background.jpg");
+
     color: green ;
+}
+.update
+{
+    background-color: dodgerblue;
 }

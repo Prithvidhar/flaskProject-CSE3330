@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="../static/styles/mystyle.css">
     <title>Home</title>
 </head>
 <body>
-<H1>Welcome to my web interface</H1>
+<center></center><H1>Welcome to my web interface</H1>
 <center>
+    <div class = "update">
     <H2>Display Official details</H2>
     <form method = "POST" action="/fetchdata">
         <label for = "Phone">Phone No:</label><br>
@@ -15,6 +16,7 @@
         <input type = "submit">
     </form>
     <hr>
+    </div>
     <H2>Add Texas Official</H2>
     <form method = "POST" action = "/insert">
         <label for = "id">ID:</label><br>
