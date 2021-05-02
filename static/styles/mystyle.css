@@ -1,12 +1,21 @@
 h1{
     background-color: tomato;
-    color: aliceblue;
+    color: whitesmoke;
 }
 body {
 
-    color: green ;
+    color: lightgreen ;
 }
-.update
+.select
 {
     background-color: dodgerblue;
+}
+.ins{
+    background-color: indianred;
+}
+.up{
+    background-color: blueviolet;
+}
+.del{
+    background-color: black;
 }

@@ -6,9 +6,9 @@
     <title>Home</title>
 </head>
 <body>
-<center></center><H1>Welcome to my web interface</H1>
+<center><H1>Welcome to my web interface</H1></center>
 <center>
-    <div class = "update">
+    <div class = "select">
     <H2>Display Official details</H2>
     <form method = "POST" action="/fetchdata">
         <label for = "Phone">Phone No:</label><br>
@@ -17,6 +17,7 @@
     </form>
     <hr>
     </div>
+    <div class = "ins">
     <H2>Add Texas Official</H2>
     <form method = "POST" action = "/insert">
         <label for = "id">ID:</label><br>
@@ -32,6 +33,8 @@
         <input type = "submit">
     </form>
     <hr>
+    </div>
+    <div class="up">
     <h2>Update official name</h2>
     <form method = "POST" action = "/update">
         <label for = "ogName">Original Name:</label><br>
@@ -41,12 +44,16 @@
         <input type = "submit">
     </form>
     <hr>
+    </div>
+    <div class="del">
     <h2>Remove official</h2>
     <form method = "POST" action = "/delete">
         <label for = "delName">Official name:</label><br>
         <input type = "text" name = "delOff" /><br>
         <input type = "submit">
+    </div>
     </form>
+
 </center>
 </body>
 </html>
